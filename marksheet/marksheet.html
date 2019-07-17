@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title></title>
+
+    </head>
+    <body>
+      <script>
+           
+        var arrSub = new Array;
+        var arrNum = new Array;
+        var arrStu = new Array;
+        var arrName = new Array;
+        var noOfStu = parseInt(prompt('Enter no ofstudent'));
+        for (var h = 1; h <= noOfStu; h++)
+        {
+          arrName[h] = prompt("Enter name of Student" + h);
+          var noOfSubject = parseInt(prompt("Enter the no of Course for " + arrName[h]));
+          for (var i = 1; i <= noOfSubject; i++)
+           {
+             arrSub[i] = prompt("Enter the course " + i + " Name for " + arrName[h] );
+            }
+          for (var j = 1; j<=noOfSubject; j++)
+            {
+              arrNum[j] = prompt("Enter the no of " + arrSub[j]);
+            }
+          // for printing data
+           console.log(arrName[h] + " data")
+          for (var k = 1; k <= noOfSubject; k++)
+          {
+              console.log("The course " + arrSub[k] + " you got " + arrNum[k]);
+          }
+         }    
+   
+      </script>
+    </body>
+</html>
